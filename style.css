@@ -12,7 +12,7 @@ html {
 
 body {
   background-color: #f9f9f9;
-  color: #333;
+  color:  #c5a8ff;
 }
 
 /* Navbar */
@@ -21,7 +21,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #0078ff;
+  background-color: #2b1055;
   color: white;
   position: sticky;
   top: 0;
@@ -47,38 +47,46 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #ffea00;
+  color: #742763;
 }
 
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: linear-gradient(to right, #0078ff, #00b4d8);
+  background: #2b1055;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 80px 10%;
   text-align: center;
+  flex-wrap: wrap;
+}
+
+.hero-content{
+  text-align: center;
+  padding: 20px;
 }
 
 .hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .hero h1 span {
-  color: #ffea00;
+  color: #742763;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
   margin-bottom: 20px;
 }
 
 .btn {
   display: inline-block;
-  background-color: #ffea00;
-  color: #333;
+  background-color:#742763;
+  color:  white;
   padding: 10px 20px;
   border-radius: 30px;
   font-weight: 600;
@@ -87,20 +95,22 @@ body {
 }
 
 .btn:hover {
-  background-color: white;
+  background-color: #503448;
 }
 
 /* About Section */
 .about-section {
   padding: 80px 20px;
   text-align: center;
+  background-color: #2b1055
+  
 }
 
 .section-title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 40px;
-  color: #333;
+  color: #c5a8ff;
   position: relative;
 }
 
@@ -109,7 +119,7 @@ body {
   display: block;
   width: 60px;
   height: 4px;
-  background-color: #0078ff;
+  background-color: #2b1055;
   margin: 10px auto 0;
   border-radius: 2px;
 }
@@ -118,12 +128,12 @@ body {
   max-width: 700px;
   margin: auto;
   line-height: 1.6;
-  color: #555;
+  color: white;
 }
 
 /* Skills Section */
 .skills-section {
-  background-color: #eef3f8;
+  background-color: #2b1055;
   padding: 80px 20px;
   text-align: center;
 }
@@ -141,7 +151,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-weight: 600;
-  color: #0078ff;
+  color: #742763;
   transition: transform 0.3s;
 }
 
@@ -151,9 +161,10 @@ body {
 
 /* Education Section */
 .education-section {
-  background-color: #f9f9f9;
+  background-color: #2b1055;
   padding: 80px 0;
   text-align: center;
+  color: #c5a8ff;
 }
 
 .education-container {
@@ -165,7 +176,7 @@ body {
 }
 
 .education-card {
-  background-color: #fff;
+  background-color: #3b2a70;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 30px 40px;
@@ -181,26 +192,33 @@ body {
 
 .education-card h3 {
   font-size: 1.5rem;
-  color: #0078ff;
+  color: #c5a8ff;
   margin-bottom: 10px;
 }
 
 .education-card .course {
   font-size: 1.1rem;
-  color: #444;
+  color:  #888;
   margin-bottom: 8px;
 }
 
 .education-card .college {
   font-size: 1rem;
-  color: #666;
+  color: #777;
   margin-bottom: 6px;
 }
 
+
 .education-card .duration {
   font-size: 0.95rem;
-  color: #888;
+  color: #666;
 }
+
+.education-card .CGPA {
+  font-size: 0.95rem;
+  color: #666;
+}
+
 
 /* === Projects Section === */
 .projects-section {
@@ -213,7 +231,7 @@ body {
 .projects-section .section-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #c5a8ff;
+  color: white;
   margin-bottom: 60px;
 }
 
@@ -277,8 +295,9 @@ body {
 /* Certificates Section */
 .certificates-section {
   padding: 80px 20px;
-  background-color: #eef3f8;
+  background-color: #2b1055;
   text-align: center;
+  color: white;
 }
 
 .certificates-container {
@@ -289,7 +308,7 @@ body {
 }
 
 .certificate-card {
-  background-color: white;
+  background-color: #3b2a70;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -303,7 +322,7 @@ body {
 }
 
 .certificate-card h3 {
-  color: #0078ff;
+  color: #c5a8ff;
   font-size: 1.1rem;
   margin-bottom: 5px;
 }
@@ -311,7 +330,7 @@ body {
 /* Contact Section */
 /* Contact Section */
 .contact-section {
-  background-color: #f9f9f9;
+  background-color: #2b1055;
   text-align: center;
   padding: 80px 0;
 }
@@ -320,18 +339,18 @@ body {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #333;
+  color: white;
 }
 
 .contact-text {
   font-size: 1.1rem;
-  color: #555;
+  color: white;
   margin-bottom: 25px;
 }
 
 .contact-details {
   font-size: 1rem;
-  color: #333;
+  color:  #c5a8ff;;
   margin-bottom: 30px;
   line-height: 1.6;
 }
