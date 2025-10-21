@@ -52,13 +52,7 @@ body {
   color: #742763;
 }
 
-/* Hamburger icon*/
-.menu-toggle{
-  display:none;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-}
+
 
 /* Hero Section */
 .hero {
@@ -404,27 +398,26 @@ body {
 }
 
 @media (max-width: 768px) {
-  .menu-toggle{
-    display: block;
-  }
   
+
   .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    flex-direction: column;
-    text-align: center;
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 10px;
   }
 
   .nav-links.active{
     display: flex;
   }
 
+
   .hero-content{
-    text-align: center;
-    padding:10px;
+    max-height: 500px;
+    opacity: 1;
+    padding:15px 0;
   }
 
   .hero-content h1{
