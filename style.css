@@ -24,7 +24,9 @@ body {
   background-color: #2b1055;
   color: white;
   position: sticky;
+  width: 100%;
   top: 0;
+  left: 0;
   z-index: 1000;
 }
 
@@ -48,6 +50,14 @@ body {
 
 .nav-links li a:hover {
   color: #742763;
+}
+
+/* Hamburger icon*/
+.menu-toggle{
+  display:none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
 }
 
 /* Hero Section */
@@ -328,7 +338,6 @@ body {
 }
 
 /* Contact Section */
-/* Contact Section */
 .contact-section {
   background-color: #2b1055;
   text-align: center;
@@ -394,14 +403,57 @@ body {
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
+  .menu-toggle{
+    display: block;
   }
-  .hero h1 {
+  
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+  }
+
+  .nav-links.active{
+    display: flex;
+  }
+
+  .hero-content{
+    text-align: center;
+    padding:10px;
+  }
+
+  .hero-content h1{
     font-size: 2rem;
+  }
+
+  .hero-content p{
+    font-size: 1rem;
+  }
+
+  .hero-image img{
+    width: 180px;
+    margin-top: 20px;
+  }
+
+  .btn{
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  @media(max-width: 768px){
+    .education-container{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .education-card{
+      width: 90%;
+    }
   }
 }
 
